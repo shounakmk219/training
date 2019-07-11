@@ -1,0 +1,44 @@
+package com.controller;
+
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class Signup
+ */
+public class Signup extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+    private Connection con=null;
+
+	@Override
+    public void init(ServletConfig config) throws ServletException {
+    	try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc","root","Sapient123");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		super.init(config);
+    }
+    public Signup() {
+        super();
+    }
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String uname=request.getParameter("uname");
+		String pass=request.getParameter("pass");
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doGet(request, response);
+	}
+
+}

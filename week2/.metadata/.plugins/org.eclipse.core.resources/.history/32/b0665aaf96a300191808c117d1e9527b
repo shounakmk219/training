@@ -1,0 +1,8 @@
+package com;
+
+public class SerializeDemo {
+
+	public static void main(String[] args) {
+		
+	}
+}

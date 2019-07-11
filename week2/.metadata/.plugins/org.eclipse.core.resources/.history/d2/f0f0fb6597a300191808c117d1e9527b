@@ -1,0 +1,10 @@
+package com;
+
+public class SerializeDemo {
+
+	public static void main(String[] args) {
+		Person per=new Person();
+		per.name="Shounak";
+		per.age=23;
+	}
+}

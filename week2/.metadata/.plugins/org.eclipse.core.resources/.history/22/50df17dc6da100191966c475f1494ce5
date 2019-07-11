@@ -1,0 +1,22 @@
+package com.pack.mockitodemo;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class CalculatorTest {
+
+	Calculator c=null;
+	CalculatorService cs=null;
+	@Test
+	public void test() {
+		assertTrue(c.performCalculation(cs));
+	}
+
+	@Before
+	public void createObject() {
+		
+		c=new Calculator();
+	}
+}

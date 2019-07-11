@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Fakebook</title>
+</head>
+<body>
+<center>
+	<h1>Sign-in</h1>
+	<form action="sign-in" method="post">
+		Username: <input type="text" name="uname"/>
+		Password: <input type="password" name="pass"/>
+		<input type="submit" value="Sign-in">
+		<input type="reset" value="Reset">
+	</form>
+</center>
+	
+
+</body>
+</html>

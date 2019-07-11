@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Create Account</title>
+</head>
+<body>
+	<h1>Sign-up</h1>
+	<form action="sign-up" method="post">
+		Username: <input type="text" name="uname"/><br>
+		Age: <input type="text" name="age"/><br>
+		Password: <input type="password" name="pass"/><br>
+		<input type="submit" value="Sign-up">
+		<input type="reset" value="Reset">
+		Already have an account? <a href="index.jsp">login</a>.<hr><br>
+	</form>
+</body>
+</html>

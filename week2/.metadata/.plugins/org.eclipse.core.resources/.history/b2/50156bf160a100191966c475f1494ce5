@@ -1,0 +1,15 @@
+package com.pack.testingDemo;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class TestCalculator {
+
+	Calculator c=new Calculator();
+	@Test
+	public void testAdd() {
+		
+	}
+
+}

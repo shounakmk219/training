@@ -1,0 +1,14 @@
+package com.pack.lombokdemo;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        Employee emp=new Employee("Shounak",21,60000,"developer");
+        System.out.println(emp);
+    }
+}

@@ -1,0 +1,10 @@
+package slf4jdemo;
+
+public class MyApp {
+	
+	private Logger;
+	public static void main(String[] args) {
+		
+	}
+
+}
