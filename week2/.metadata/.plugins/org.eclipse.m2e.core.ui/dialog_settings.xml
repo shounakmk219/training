@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\training\week2\looggerDemo"/>
+			<item value="C:\training\week2\slf4jdemo\src\main\java\slf4jdemo\MyApp.java"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -25,19 +27,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.pack.jdbc"/>
-			<item value="com.pack.mockitodemo"/>
-			<item value="com.pack.testingDemo"/>
-			<item value="com.pack.lombokdemo"/>
+			<item value="com.spring.springDemo"/>
 		</list>
 		<list key="groupId">
-			<item value="com.pack"/>
+			<item value="com.spring"/>
 		</list>
 		<list key="artifactId">
-			<item value="jdbc"/>
-			<item value="mockitodemo"/>
-			<item value="testingDemo"/>
-			<item value="lombokdemo"/>
+			<item value="springDemo"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

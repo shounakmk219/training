@@ -1,7 +1,11 @@
 INDEX VERSION 1.131
+C:\training\week2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3538691376.index
+\employee\src\main\resources
 C:\training\week2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\353847342.index
 \Fakebook\src
 C:\training\week2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3360891523.index
 \WebProject\src
 C:\training\week2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2416664023.index
 \SessionDemo\src
+C:\training\week2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3687645360.index
+\EmployeeManagement\src

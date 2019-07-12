@@ -3,8 +3,24 @@
    xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
    xsi:schemaLocation = "http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
-	<bean id="Human" class="com.spring.springDemo.Man">
-		<property name="name" value="Raj"></property>
-		<property name="age" value="22"></property>
+	<bean id="man" class="com.spring.springdemo.Man">
+		<constructor-arg name="name" value="Rajesh"></constructor-arg>
+		<constructor-arg name="age" value="34"></constructor-arg>
+		<constructor-arg name="address" ref="m_addr"></constructor-arg>
+	</bean>
+	<bean id="woman" class="com.spring.springdemo.Woman">
+		<constructor-arg name="name" value="Rajeshri"></constructor-arg>
+		<constructor-arg name="age" value="24"></constructor-arg>
+		<constructor-arg name="address" ref="w_addr"></constructor-arg>
+	</bean>
+	<bean id="m_addr" class="com.spring.springdemo.Address">
+		<property name="city" value="bangalore"></property>
+		<property name="state" value="karnataka"></property>
+		<property name="pin" value="560100"></property>
+	</bean>
+	<bean id="w_addr" class="com.spring.springdemo.Address">
+		<property name="city" value="pune"></property>
+		<property name="state" value="maharashtra"></property>
+		<property name="pin" value="460100"></property>
 	</bean>
 </beans>

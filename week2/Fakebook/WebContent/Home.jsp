@@ -7,6 +7,18 @@
 <title>Home</title>
 </head>
 <body>
-<h2>Welcome <%=request.getAttribute("uname")%></h2>
+<%@page import="java.*" %>
+<%
+	String uname=(String)session.getAttribute("uname"); 
+	if(uname==null){
+		response.sendRedirect("http://localhost:8080/Fakebook/index.jsp");
+	}
+%>
+
+
+<h2>Welcome <%=uname%></h2>
+
+<a href="signout.jsp">Signout</a>
+<h3><%=session.getId() %></h3>
 </body>
 </html>

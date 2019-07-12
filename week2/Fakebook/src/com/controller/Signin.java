@@ -15,6 +15,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.model.Profile;
 
@@ -35,7 +36,8 @@ public class Signin extends HttpServlet {
 		String uname=request.getParameter("uname");
 		String password=request.getParameter("pass");
 		if(profile.isValidUser(uname, password)) {
-			request.setAttribute("uname", uname);
+			HttpSession session=request.getSession();
+			session.setAttribute("uname", uname);
 			RequestDispatcher rd=request.getRequestDispatcher("Home.jsp");
 			rd.forward(request, response);
 		}
